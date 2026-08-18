@@ -2,6 +2,7 @@ package com.itheima.wst.exception;
 
 import com.itheima.wst.entity.Gf;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ExceptionDemo5 {
@@ -17,11 +18,15 @@ public class ExceptionDemo5 {
                 String name=sc.next();
                 g.setName(name);
                 System.out.println("请输入年龄");
-                int age=sc.nextInt();
-                g.setAge(age);
+                String age=sc.next();
+                g.setAge(Integer.parseInt(age));
                 break;
-            } catch (Exception e) {
+            } catch (NumberFormatException e) {
                 e.printStackTrace();
+                System.out.println("年龄必须是整数");
+            } catch (RuntimeException e) {
+                e.printStackTrace();
+                System.out.println("请重新输入");
             }
         }
 
