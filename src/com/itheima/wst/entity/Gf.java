@@ -8,9 +8,9 @@ public class Gf {
         return name;
     }
 
-    public void setName(String name) throws RuntimeException {
+    public void setName(String name) throws NameException {
         if(name.length()<3 || name.length()>10){
-            throw new RuntimeException("姓名长度必须在3-10之间");
+            throw new NameException("姓名长度必须在3-10之间");
         }
         this.name = name;
     }
@@ -19,9 +19,9 @@ public class Gf {
         return age;
     }
 
-    public void setAge(int age) throws RuntimeException {
+    public void setAge(int age) throws AgeOutOfBoundsException {
         if (age < 18 || age > 40) {
-            throw new RuntimeException("年龄必须在18-40之间");
+            throw new AgeOutOfBoundsException("年龄必须在18-40之间");
         }
         this.age = age;
     }
