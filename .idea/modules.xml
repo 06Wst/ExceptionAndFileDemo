@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ExceptionDemo.iml" filepath="$PROJECT_DIR$/ExceptionDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExceptionAndFileDemo.iml" filepath="$PROJECT_DIR$/ExceptionAndFileDemo.iml" />
     </modules>
   </component>
 </project>
