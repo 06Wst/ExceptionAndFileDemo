@@ -17,6 +17,12 @@ public class ExceptionDemo1 {
         /*Student s1=new Student("张三,18");
         System.out.println(s1);*/
 
-
+        int []arr={1,2,3,4,5};
+        try {
+            System.out.println(arr[10]);
+            System.out.println("看看我执行了吗");          //捕获到异常后，不会执行下面的代码
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("捕获异常");
+        }
     }
 }
